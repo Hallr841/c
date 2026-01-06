@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "build helloworld (MSYS2 UCRT64 g++)",
+		"type": "shell",
+		"command": "powershell",
+		"args": [
+		  "-NoProfile",
+		  "-ExecutionPolicy",
+		  "Bypass",
+		  "-Command",
+		  "& 'C:\\msys64\\ucrt64\\bin\\g++.exe' -Wall -Wextra -g3 '${workspaceFolder}\\helloworld.cpp' -o '${workspaceFolder}\\output\\helloworld.exe'"
+		],
+		"problemMatcher": ["$gcc"],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  }
+	]
+  }
+  
